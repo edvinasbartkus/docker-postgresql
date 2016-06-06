@@ -14,7 +14,11 @@ This Dockerfile applies the instructions given here: http://wiki.postgresql.org/
 `[sudo] docker build -t postgresql .`
 
 ## Run it
-`docker run --restart="always" -d -P --name "container_name" --env 'DB_USER=username' --env 'DB_PASS=password' --env 'DB_NAME=dbname' image_name`
+```
+docker run --restart="always" -d -P --name "container_name" --env 'DB_USER=username' --env 'DB_PASS=password' --env 'DB_NAME=dbname' image_name
+```
 
 ## Example
+```
 docker run --restart="always" -d -P --name "postgres" --env 'DB_USER=giedrius' --env 'DB_PASS=giedrius' --env 'DB_NAME=giedrius_database' edvinasbartkus/postgres
+```
